@@ -133,12 +133,15 @@ section {
   color: gray;
   line-height: 1.6;
 }
-
+.popular-posts .posts::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
 .popular-posts .title {
   margin-top: 10%;
 }
 .popular-posts .posts {
   display: flex;
+  overflow: auto;
 }
 .posts .post-card {
   margin: 10px 50px;
@@ -195,7 +198,7 @@ footer {
 .social-media {
   padding: 10% 40%;
 }
-.social-media i{
+.social-media i {
   font-size: 20px;
   background-color: rgb(210, 210, 210);
   padding: 20px;
